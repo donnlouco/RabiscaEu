@@ -63,7 +63,7 @@ img{
     padding-bottom: 4px;   /* espaço para a barra */
 }
 
-.header-right > div:hover{
+.header-right div:hover{
     cursor: pointer;
     color: #c7a489;
     transition: backgound-color 0.3s ease-in-out;
