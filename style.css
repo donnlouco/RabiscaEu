@@ -204,6 +204,7 @@ img{
 
 .sobreNosTexto p{
     font-size: 20px;
+    color: #dadee5;;
 }
 
 .btn2{
@@ -233,7 +234,7 @@ img{
     position: relative;
     padding-left: 25px; /* Abre espaço para o ícone não ficar em cima do texto */
     margin-bottom: 12px; /* Espaço entre as linhas */
-    color: white;      /* Cor do texto (cinza claro) */
+    color: #dadee5;;      /* Cor do texto (cinza claro) */
     font-size: 20px;
     line-height: 1.5;
 }
