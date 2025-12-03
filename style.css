@@ -37,7 +37,7 @@ body{
 }
 
 .logoHeader{
-    width: 50%;
+    width: 40%;
     height: 90px;
     align-items: center;
     
@@ -55,12 +55,16 @@ img{
     gap: 20px;
     width: 50%;
     color: white;
+    justify-content: space-around;
 }
 
 .header-right div {
     position: relative;
     display: inline-block; /* garante que a largura seja do texto */
     padding-bottom: 4px;   /* espaço para a barra */
+    font-family: "Oswald", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
 }
 
 .header-right div:hover{
@@ -92,7 +96,7 @@ img{
     position: relative;
     height: 100vh;
     width: 100%;
-    background-image: url('sobre6.png');
+    background-image: url(https://i.imgur.com/LZVdbzP.jpeg);
     background-size: cover;
     background-position: center;
     display: flex;
@@ -112,12 +116,18 @@ img{
     z-index: 2;
     color: white;
     max-width: 600px;
+    font-family: "Roboto Slab", serif;
+    font-optical-sizing: auto;
+    font-style: normal;
 }
 
 .textModern h1 {
     font-size: 64px;
     line-height: 1.1;
     font-weight: 900;
+    font-family: "Oswald", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
 }
 
 .textModern h1 span {
@@ -194,6 +204,9 @@ img{
 .sobreNosTexto{
     width: 50%;
     font-size: 20px;
+    font-family: "Oswald", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
 }
 
 .sobreNosTexto h1{
