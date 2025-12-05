@@ -64,6 +64,10 @@ img{
     color: white;
 }
 
+a:hover {
+    color: inherit !important;
+}
+
 .header-right div {
     position: relative;
     display: inline-block; /* garante que a largura seja do texto */
@@ -72,6 +76,7 @@ img{
     font-optical-sizing: auto;
     font-style: normal;
 }
+
 
 .header-right div:hover{
     cursor: pointer;
@@ -131,7 +136,7 @@ img{
     font-size: 64px;
     line-height: 1.1;
     font-weight: 900;
-    font-family: "Oswald", sans-serif;
+    font-family: "Roboto Slab", serif;
     font-optical-sizing: auto;
     font-style: normal;
 }
@@ -146,7 +151,7 @@ img{
     color: #dadee5;
 }
 
-.textModern a{
+.meubtn{
     text-decoration: none;
     margin-top: 30px;
     display: inline-block;
@@ -210,23 +215,28 @@ img{
 .sobreNosTexto{
     width: 50%;
     font-size: 20px;
-    font-family: "Oswald", sans-serif;
+    font-family: "Roboto Slab", serif;
     font-optical-sizing: auto;
     font-style: normal;
 }
 
 .sobreNosTexto h1{
     font-size: 55px;
+    line-height: 1.1;
 }
 
 .sobreNosTexto p{
     font-size: 20px;
-    color: #dadee5;;
+    color: #dadee5;
+    font-family: "Roboto Slab", serif;
+    font-optical-sizing: auto;
+    font-style: normal;
 }
 
 
 
 .btn2{
+    text-decoration: none;
     margin-top: 30px;
     display: inline-block;;
     padding: 12px 30px;
@@ -234,6 +244,7 @@ img{
     border-radius: 8px;
     color: #c7a489;
     font-weight: bold;
+    
 }
 
 .btn2:hover{
@@ -247,6 +258,9 @@ img{
     list-style: none; /* Remove a bolinha preta padrão */
     padding: 0;       /* Remove o recuo padrão */
     margin: 0;
+    font-family: "Roboto Slab", serif;
+    font-optical-sizing: auto;
+    font-style: normal;
 }
 
 .listaNos li{
