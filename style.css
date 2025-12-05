@@ -28,7 +28,7 @@ body{
 }
 
 .header.scrolled {
-    background: rgba(0, 0, 0, 0.85); /* preto ao rolar */
+    background: black; 
     backdrop-filter: blur(4px);
 }
 
@@ -70,9 +70,9 @@ a:hover {
 
 .header-right div {
     position: relative;
-    display: inline-block; /* garante que a largura seja do texto */
-    padding-bottom: 4px;   /* espaço para a barra */
-    font-family: "Oswald", sans-serif;
+    display: inline-block; 
+    padding-bottom: 4px;   /* espaço para a barrinha */
+    font-family: "Roboto Slab", serif;
     font-optical-sizing: auto;
     font-style: normal;
 }
@@ -89,10 +89,10 @@ a:hover {
     position: absolute;
     bottom: 0;
     left: 0;
-    height: 2px;          /* espessura do sublinhado */
+    height: 2px;          /* espessura do barrinha */
     width: 0%;            /* começa invisível */
-    background: #c7a489;    /* cor da barra */
-    transition: width 0.35s ease; /* suavização */
+    background: #c7a489;    
+    transition: width 0.35s ease; 
 }
 
 .header-right div:hover::after {
@@ -203,12 +203,11 @@ a:hover {
     position: absolute;
     width: 100%;
     height: 100%;
-    object-fit: cover;   /* Corta a imagem para preencher sem esticar */
+    object-fit: cover;   /* corta a imagem sem precisar esticar */
     opacity: 0;
     transition: opacity 1s ease-in-out;
 }
 
-/* A classe que deixa visível */
 .slide-item.ativo {
     opacity: 1;
 }
@@ -257,7 +256,7 @@ a:hover {
 
 .listaNos{
     list-style: none; /* Remove a bolinha preta padrão */
-    padding: 0;       /* Remove o recuo padrão */
+    padding: 0;       
     margin: 0;
     font-family: "Roboto Slab", serif;
     font-optical-sizing: auto;
@@ -267,8 +266,8 @@ a:hover {
 .listaNos li{
     position: relative;
     padding-left: 25px; /* Abre espaço para o ícone não ficar em cima do texto */
-    margin-bottom: 12px; /* Espaço entre as linhas */
-    color: #dadee5;;      /* Cor do texto (cinza claro) */
+    margin-bottom: 12px; 
+    color: #dadee5;      
     font-size: 20px;
     line-height: 1.5;
 }
@@ -278,52 +277,46 @@ a:hover {
     position: absolute;
     left: 0;
     top: 0;
-    color: #c7a489;      /* A sua cor dourada */
-    font-weight: bold;   /* Deixa o check mais grossinho se precisar */
+    color: #c7a489;     
+    font-weight: bold;   
 }
 
 
 .nossaEquipe{
-    height: 600px;
+    height: 800px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
 }
 
-#carouselExampleControls{
-    width: 80%;
-    margin: 40px auto;
-    border-radius: 10px;
-    overflow: hidden;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+.nossaEquipe h1{
+    color: white;
+    margin-top: 20px;
+    font-family: "Roboto Slab", serif;
+    font-optical-sizing: auto;
+    font-style: normal;
 }
 
-.carousel-item img {
-    height: 400px;         /* Ajuste a altura como quiser */
-    object-fit: cover;     /* Corta sem deformar */
+.nossaEquipe p{
+    color: #dadee5; 
+    font-size: 20px;
+    margin-top: 20px;
+    font-family: "Roboto Slab", serif;
+    font-optical-sizing: auto;
+    font-style: normal;
 }
 
-/* Indicadores (bolinhas) */
-.carousel-indicators [data-bs-target] {
-    background-color: #fff;
+.container-carrossel{
+    display: flex;
+    
 }
 
-.carousel-indicators .active {
-    background-color: #000;
-}
 
-/* Botões de navegação */
-.carousel-control-prev-icon,
-.carousel-control-next-icon {
-    filter: invert(1); /* Ícones brancos */
-}
-
-/* Botões de navegação ao passar o mouse */
-.carousel-control-prev:hover,
-.carousel-control-next:hover {
-    background-color: rgba(0, 0, 0, 0.2);
-}
 
 .orcamentoMain{
-    height: 600px;
+    height: 300px;
     background-color: #141414;
+    background-image: url("");
 }
 
 
