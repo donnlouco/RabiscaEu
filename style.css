@@ -1,7 +1,6 @@
 body{
     padding: 0px;
     margin: 0px;
-    background-color: black;
 }
 .box{
     width: 100%;
@@ -16,6 +15,7 @@ body{
     flex-direction: column;
     margin: 0px;
     padding: 0px;
+    background-color: black;
 }
 
 .header {
@@ -162,7 +162,8 @@ a:hover {
     font-weight: bold;
 }
 
-.btn:hover{
+.meubtn:hover{
+    color: #141414;
     transform: scale(1.03);
     transition: transform 0.3s ease;
 }
@@ -279,4 +280,53 @@ a:hover {
     top: 0;
     color: #c7a489;      /* A sua cor dourada */
     font-weight: bold;   /* Deixa o check mais grossinho se precisar */
+}
+
+
+.nossaEquipe{
+    height: 600px;
+}
+
+#carouselExampleControls{
+    width: 80%;
+    margin: 40px auto;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.carousel-item img {
+    height: 400px;         /* Ajuste a altura como quiser */
+    object-fit: cover;     /* Corta sem deformar */
+}
+
+/* Indicadores (bolinhas) */
+.carousel-indicators [data-bs-target] {
+    background-color: #fff;
+}
+
+.carousel-indicators .active {
+    background-color: #000;
+}
+
+/* Botões de navegação */
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    filter: invert(1); /* Ícones brancos */
+}
+
+/* Botões de navegação ao passar o mouse */
+.carousel-control-prev:hover,
+.carousel-control-next:hover {
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+.orcamentoMain{
+    height: 600px;
+    background-color: #141414;
+}
+
+
+.footer{
+    height: 300px;
 }
