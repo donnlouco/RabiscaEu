@@ -30,13 +30,6 @@ git clone https://github.com/donnlouco/RabiscaEu.git
 cd RabiscaEu
 ```
 
-## 📦 Instalação das Dependências
-
-Antes de executar o servidor, instale as dependências do projeto:
-
-```bash
-npm install
-```
 
 As dependências principais são:
 - **Express** - Framework web para Node.js
