@@ -67,6 +67,15 @@
                                     allowfullscreen>
                                 </iframe>
                             </div>
+                            <div class="disponibilidadeContato">
+                                <h3><b>Consultar Disponibilidade</b></h3>
+                                <label for="dataAgenda">Selecione a data:</label>
+                                <input type="date" id="dataAgenda" min="">
+
+                                <button id="btnConsultar">Ver horários disponíveis</button>
+
+                                <div id="resultadoDisponibilidade"></div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -97,17 +106,64 @@
             </div>
         </div>
     </div>
-</body>
-<script>
-    window.addEventListener("scroll", () => {
-    const header = document.querySelector(".header");
+    <script>
 
-    if (window.scrollY > 30) {
-        header.classList.add("scrolled");
-    }
-    else{
-        header.classList.remove("scrolled");
-    }
-    })
-</script>
+        // Definir o mínimo da data como hoje
+        document.addEventListener("DOMContentLoaded", () => {
+            const hoje = new Date().toISOString().split("T")[0];
+            document.getElementById("dataAgenda").setAttribute("min", hoje);
+        });
+
+        document.getElementById("btnConsultar").addEventListener("click", async () => {
+
+            const data = document.getElementById("dataAgenda").value;
+            const resultado = document.getElementById("resultadoDisponibilidade");
+
+            if (!data) {
+                resultado.innerHTML = "<p style='color:red'>Selecione uma data.</p>";
+                return;
+            }
+
+            // Bloquear datas passadas também no JS
+            const hoje = new Date().toISOString().split("T")[0];
+            if (data < hoje) {
+                resultado.innerHTML = "<p style='color:red'>Você não pode selecionar uma data passada.</p>";
+                return;
+            }
+
+            resultado.innerHTML = "Carregando...";
+
+            try {
+                const response = await fetch(`http://localhost:3000/disponibilidade?data=${data}`);
+                const horarios = await response.json();
+
+                if (horarios.length === 0) {
+                    resultado.innerHTML = "<p>Nenhum horário disponível.</p>";
+                    return;
+                }
+
+                let html = "<h4>Horários disponíveis:</h4><ul>";
+                horarios.forEach(h => html += `<li>${h}</li>`);
+                html += "</ul>";
+
+                resultado.innerHTML = html;
+
+            } catch (error) {
+                resultado.innerHTML = "<p style='color:red'>Erro ao consultar o servidor.</p>";
+            }
+        });
+    </script>
+    <script>
+        window.addEventListener("scroll", () => {
+            const header = document.querySelector(".header");
+
+            if (window.scrollY > 30) {
+                header.classList.add("scrolled");
+            } else {
+                header.classList.remove("scrolled");
+            }
+        });
+    </script>
+</body>
+
 </html>
