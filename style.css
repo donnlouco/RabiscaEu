@@ -91,7 +91,7 @@ a:hover {
     white-space: nowrap;
     position: relative;
     display: inline-block; 
-    padding-bottom: 4px;
+    padding-bottom: 4px;   /* espaço para a barrinha */
     font-family: "Roboto Slab", serif;
     font-optical-sizing: auto;
     font-style: normal;
@@ -325,20 +325,13 @@ a:hover {
 
 .nossaEquipe h1{
     color: white;
-    margin-top: 20px;
+    margin-top: 40px;
+    margin-bottom: 20px;
     font-family: "Roboto Slab", serif;
     font-optical-sizing: auto;
     font-style: normal;
 }
 
-.nossaEquipe p{
-    color: #dadee5; 
-    font-size: 20px;
-    margin-top: 20px;
-    font-family: "Roboto Slab", serif;
-    font-optical-sizing: auto;
-    font-style: normal;
-}
 
 .container-carrossel{
     display: flex;
@@ -482,7 +475,7 @@ a:hover {
 
 .paragrafo-orcamento{
     color: #dadee5;
-    font-size: 18px;
+    font-size: 20px;
 }
 
 .footer{
