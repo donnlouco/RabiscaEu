@@ -91,7 +91,7 @@ a:hover {
     white-space: nowrap;
     position: relative;
     display: inline-block; 
-    padding-bottom: 4px;   /* espaço para a barrinha */
+    padding-bottom: 4px;  
     font-family: "Roboto Slab", serif;
     font-optical-sizing: auto;
     font-style: normal;
@@ -367,6 +367,7 @@ a:hover {
 @media(max-width:1590px){
     .cardes-carrossel{
         width: 40%;
+        height: 700px;
     }
 }
 @media(max-width:600px){
@@ -383,7 +384,7 @@ a:hover {
 }
 
 .texto-cardes h1{
-    font-size: 20px;
+    font-size: 19px;
 }
 .texto-cardes span{
     font-size: 18px;
@@ -400,12 +401,34 @@ a:hover {
 .feedbackMain{
     background-color: #141414;
     min-height: 600px;
+    width: 100%;
     height: auto;
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
-    gap: 25px;
+    gap: 30px;
+    font-family: "Roboto Slab", serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    padding-top: 20px;
+    padding-bottom: 20px;
 }
+
+.feedbackMain h1{
+    color: white;
+    text-align: center;
+}
+
+.container-feedback{
+    display: flex;
+    gap: 25px;
+    justify-content: center;
+    margin-bottom: 20px;
+    flex-wrap: wrap;
+    width: 90%;
+}
+
 
 .cardes-feedback{
     width: 300px;
@@ -416,11 +439,37 @@ a:hover {
     font-family: "Roboto Slab", serif;
     font-optical-sizing: auto;
     font-style: normal;
-    padding: 10px;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .cardes-feedback:hover{
     border: solid 2px #c7a489;
+}
+
+.cardes-feedback p{
+    color: #dadee5;
+    font-size: 18px;
+}
+
+.cardes-feedback h3{
+    color: white;
+    justify-content: end;
+}
+
+.cardes-feedback span{
+    color: #c7a489;
+}
+
+.texto-avaliacao::after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 1px;
+  background-color: rgba(255, 255, 255, 0.2);
+  margin: 20px 0;
 }
 
 .orcamentoMain{
@@ -476,6 +525,66 @@ a:hover {
 .paragrafo-orcamento{
     color: #dadee5;
     font-size: 20px;
+}
+
+.pagamentosMain{
+    min-height: 300px;
+    height: auto;
+    text-align: center;
+    padding: 20px;
+    font-family: "Roboto Slab", serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    gap: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.pagamentosMain h1{
+    color: white;
+}
+
+.container-pagamentos{
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+
+
+.cardes-pagamentos{
+    color: white;
+    border-radius: 10px;
+    height: 200px;
+    width: 300px;
+    padding: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#pix-pagamento{
+    width: 190px;
+    height: auto;
+}
+
+#dinheiro-pagamento{
+    width: 300px;
+    height: auto;
+}
+
+#cartao-pagamento{
+    width: 300px;
+    height: auto;
+}
+
+.pagamentosMain::after{
+    content: "";
+    display: block;
+    width: 100%;
+    height: 1px;
+    background-color: rgba(255, 255, 255, 0.2);
+    margin: 20px 0;
 }
 
 .footer{

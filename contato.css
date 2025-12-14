@@ -234,6 +234,10 @@ a:hover {
     font-style: normal;
 }
 
+.disponibilidadeContato:hover{
+    border: 1px solid #c7a489;
+}
+
 .disponibilidadeContato h3 {
     margin-bottom: 10px;
 }
