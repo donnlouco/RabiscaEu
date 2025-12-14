@@ -108,7 +108,7 @@
     </div>
     <script>
 
-        // Definir o mínimo da data como hoje
+        // para bloquear as datasa passadas no input la
         document.addEventListener("DOMContentLoaded", () => {
             const hoje = new Date().toISOString().split("T")[0];
             document.getElementById("dataAgenda").setAttribute("min", hoje);
@@ -124,7 +124,6 @@
                 return;
             }
 
-            // Bloquear datas passadas também no JS
             const hoje = new Date().toISOString().split("T")[0];
             if (data < hoje) {
                 resultado.innerHTML = "<p style='color:red'>Você não pode selecionar uma data passada.</p>";
